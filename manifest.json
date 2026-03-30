@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Guardar Links Manualmente",
+  "version": "1.0",
+  "description": "Permite guardar enlaces manualmente en almacenamiento local",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
