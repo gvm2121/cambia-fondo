@@ -1,6 +1,6 @@
 // Mostrar enlaces desde el archivo enlaces.json
 function mostrarEnlaces() {
-  fetch(chrome.runtime.getURL("enlaces.json"))
+  fetch("https://raw.githubusercontent.com/gvm2121/cambia-fondo/refs/heads/main/enlaces.json")
     .then((response) => response.json())
     .then((enlaces) => {
       const lista = document.getElementById("listaEnlaces");
@@ -23,7 +23,7 @@ function mostrarEnlaces() {
       });
     })
     .catch((err) => {
-      console.error("Error al leer enlaces.json:", err);
+      console.error("Error al leer enlaces desde la URL externa:", err);
     });
 }
 
